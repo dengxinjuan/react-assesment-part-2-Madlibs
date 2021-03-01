@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const MadlibsForm = () => {
+const MadlibsForm = ({ getData, isShown }) => {
   const [formData, setFormData] = useState({
     noun: "",
     noun2: "",
@@ -18,7 +18,7 @@ const MadlibsForm = () => {
 
   const gatherInput = (evt) => {
     evt.preventDefault();
-
+    getData(formData);
     setFormData({
       noun: "",
       noun2: "",
@@ -28,7 +28,7 @@ const MadlibsForm = () => {
   };
 
   return (
-    <div>
+    <div className={isShown}>
       <h1>Madlibs!</h1>
       <form onSubmit={gatherInput}>
         <div>

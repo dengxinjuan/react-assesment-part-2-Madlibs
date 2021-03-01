@@ -1,11 +1,12 @@
 //import logo from "./logo.svg";
 import "./App.css";
-import MadlibsForm from "./MadlibsForm";
+
+import Madlibs from "./Madlibs";
 
 function App() {
   return (
     <div className="App">
-      <MadlibsForm />
+      <Madlibs />
     </div>
   );
 }
