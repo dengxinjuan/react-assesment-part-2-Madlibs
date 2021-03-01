@@ -10,6 +10,7 @@ const MadlibsForm = ({ getData, isShown }) => {
 
   const handleChange = (evt) => {
     const { name, value } = evt.target;
+
     setFormData((formData) => ({
       ...formData,
       [name]: value,
@@ -41,7 +42,6 @@ const MadlibsForm = ({ getData, isShown }) => {
             id="noun"
             placeholder="noun"
           />
-          {formData.noun}
         </div>
 
         <div>
@@ -54,7 +54,6 @@ const MadlibsForm = ({ getData, isShown }) => {
             id="noun2"
             placeholder="noun2"
           />
-          {formData.noun2}
         </div>
 
         <div>
@@ -67,7 +66,6 @@ const MadlibsForm = ({ getData, isShown }) => {
             id="adjective"
             placeholder="adjective"
           />
-          {formData.adjective}
         </div>
 
         <div>
@@ -80,7 +78,6 @@ const MadlibsForm = ({ getData, isShown }) => {
             id="color"
             placeholder="color"
           />
-          {formData.color}
         </div>
 
         <button>Get Story!</button>
