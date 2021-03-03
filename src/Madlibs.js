@@ -1,7 +1,7 @@
 import { useState } from "react";
 import MadlibsForm from "./MadlibsForm";
 import Story from "./Story";
-import "./App.css";
+import "./assets/App.css";
 
 const Madlibs = () => {
   /*the original story here*/
